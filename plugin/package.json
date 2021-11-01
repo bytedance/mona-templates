@@ -5,8 +5,8 @@
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "mona-build",
-    "start": "mona-start"
+    "build": "mona build",
+    "start": "mona start"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
