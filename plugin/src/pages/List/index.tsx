@@ -1,5 +1,5 @@
 import Wrapper from '@/components/Wrapper';
-import { Link } from '@bytedance/mona';
+import { Link } from '@bytedance/mona-runtime';
 import React from 'react';
 
 const List = () => {
