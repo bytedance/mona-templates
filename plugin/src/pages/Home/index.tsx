@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '@bytedacne/mona'
+import { Link } from '@bytedance/mona'
 import logo from '@/common/imgs/logo.svg';
 import Wrapper from '@/components/Wrapper';
 import styles from './index.<%= data.cssExt %>';

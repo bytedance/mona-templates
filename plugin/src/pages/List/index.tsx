@@ -1,5 +1,5 @@
 import Wrapper from '@/components/Wrapper';
-import { Link } from '@bytedacne/mona';
+import { Link } from '@bytedance/mona';
 import React from 'react';
 
 const List = () => {

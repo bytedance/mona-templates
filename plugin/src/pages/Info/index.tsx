@@ -1,5 +1,5 @@
 import Wrapper from '@/components/Wrapper';
-import { Link, PageProps } from '@bytedacne/mona';
+import { Link, PageProps } from '@bytedance/mona';
 import React from 'react';
 
 const Info: React.FC<PageProps> =({ search, searchParams }) => {
