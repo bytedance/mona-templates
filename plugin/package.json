@@ -5,18 +5,18 @@
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "yarn mona-build",
-    "start": "yarn mona-start"
+    "build": "mona-build",
+    "start": "mona-start"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
-    "@bytedance/mona": "^0.0.4"
+    "@bytedance/mona": "^0.0.5",
+    "@bytedance/mona-runtime": "^0.0.5"
   },
   "devDependencies": {
-    "@bytedance/mona-build": "^0.0.4",
     "typescript": "^4.0.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0"
