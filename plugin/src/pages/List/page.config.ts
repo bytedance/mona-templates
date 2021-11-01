@@ -1,4 +1,4 @@
-import { createPageConfig } from '@ecom/mona';
+import { createPageConfig } from '@bytedacne/mona';
 
 export default createPageConfig({
   navigationBarTitleText: 'list page'
