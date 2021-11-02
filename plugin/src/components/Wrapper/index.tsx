@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.less';
 
-const Wrapper: React.FC = ({ children }) => {
+const Wrapper<%= data.typescript ? ': : React.FC' : '' %> = ({ children }) => {
   return <div className={styles.container}>{children}</div>
 }
 
