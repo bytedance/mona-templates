@@ -1,11 +1,11 @@
 {
   "name": "<%= data.projectName %>",
   "version": "1.0.0",
-  "description": "Project created by Mona",
+  "description": "Project created by mona-cli",
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "mona build",
+    "build": "rm -rf dist && mona build",
     "start": "mona start"
   },
   "dependencies": {
