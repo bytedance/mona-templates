@@ -15,13 +15,12 @@
     "react-router-dom": "^5.2.0",
     "@bytedance/mona": "^0.0.5",
     "@bytedance/mona-runtime": "^0.0.5"
-  },
-  <% if(data.typescript) { %>
+  },<% if(false) { %>
   "devDependencies": {
-    "typescript": "^4.0.2",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0"
-  },
-  <% } -%>
+      "typescript": "^4.0.2",
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0"
+    },<%
+  } %>
   "license": "UNLICENSED"
 }
