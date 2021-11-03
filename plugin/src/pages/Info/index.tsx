@@ -2,7 +2,7 @@ import Wrapper from '@/components/Wrapper';
 import { Link<%= data.typescript ? ', PageProps' : '' %> } from '@bytedance/mona-runtime';
 import React from 'react';
 
-const Info<%= data.typescript ? ': React.FC<PageProps>' : '' %> = ({ search, searchParams }) => {
+const Info<%- data.typescript ? ': React.FC<PageProps>' : '' %> = ({ search, searchParams }) => {
   console.log(search, searchParams);
   return (
     <Wrapper>
