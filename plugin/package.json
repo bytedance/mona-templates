@@ -6,15 +6,16 @@
   "private": true,
   "scripts": {
     "build": "rm -rf dist && mona build",
-    "start": "mona start"
+    "start": "mona start",
+    "compress": "mona publish"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
-    "@bytedance/mona": "^0.0.5",
-    "@bytedance/mona-runtime": "^0.0.5"
+    "@bytedance/mona": "^0.0.6",
+    "@bytedance/mona-runtime": "^0.0.6"
   },<% if(false) { %>
   "devDependencies": {
       "typescript": "^4.0.2",
