@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rm -rf dist && mona build",
     "start": "mona start",
-    "compress": "mona publish"
+    "compress": "yarn build && mona publish"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
