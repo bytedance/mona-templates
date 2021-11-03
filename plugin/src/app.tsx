@@ -1,7 +1,7 @@
 import React from 'react';
 import '@/common/styles/base.<%= data.cssExt %>';
 
-const App: React.FC = ({ children }) => {
+const App<%= data.typescript ? ': React.FC' : '' %> = ({ children }) => {
   return (
     <div>{children}</div>
   )
