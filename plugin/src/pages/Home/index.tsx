@@ -13,6 +13,9 @@ const Home = () => {
         <ul className={styles.list}>
           <li className={styles.link}><Link to="/pages/Info/index">Click me to navigate <code>/pages/Info/index</code></Link></li>
           <li className={styles.link}><Link to="/pages/List/index">Click me to navigate <code>/pages/List/index</code></Link></li>
+          <li className={styles.link}>
+            <Link to='/pages/SdkExample/index'>示例程序</Link>
+          </li>
         </ul>
       </header>
     </Wrapper>
