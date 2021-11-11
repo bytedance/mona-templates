@@ -14,6 +14,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
+    "react-json-view": "^1.21.3",
     "@bytedance/mona": "^0.0.6",
     "@bytedance/mona-runtime": "^0.0.6"
   },<% if(data.typescript) { %>
