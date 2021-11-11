@@ -1,5 +1,4 @@
-import Wrapper from '@/components/Wrapper';
-import { Link, pigeon } from '@bytedance/mona-runtime';
+import { pigeon } from '@bytedance/mona-runtime';
 import React, { useState, useEffect } from 'react';
 
 import ReactJson from 'react-json-view';
