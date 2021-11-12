@@ -63,7 +63,7 @@ const SdkExample = () => {
 
   return (
     <div className={styles.container}>
-      <Block title={`当前环境 : ${(window as any).platform === 'pigeon' ? '飞鸽环境' : '非飞鸽环境'}`}></Block>
+      <Block title={`当前环境 : ${<%- data.typescript ? `(window as any)` : 'window' %>.platform === 'pigeon' ? '飞鸽环境' : '非飞鸽环境'}`}></Block>
       <Block title='复制能力'>
         <>
           <button onClick={handleCopy}>复制</button>
