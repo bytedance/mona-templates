@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rm -rf dist && mona build",
     "start": "mona start",
-    "compress": "yarn build && mona publish"
+    "compress": "mona publish"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
@@ -15,8 +15,8 @@
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
     "react-json-view": "^1.21.3",
-    "@bytedance/mona": "^0.0.6",
-    "@bytedance/mona-runtime": "^0.0.6"
+    "@bytedance/mona": "^0.0.7",
+    "@bytedance/mona-runtime": "^0.0.7"
   },<% if(data.typescript) { %>
   "devDependencies": {
       "typescript": "^4.0.2",
