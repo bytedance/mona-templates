@@ -10,4 +10,9 @@ declare module '*.scss';
 declare module '*.less';
 declare module '*.css';
 declare module '*.json';
-declare module '*.svg';
+
+declare interface SvgrComponent extends React.StatelessComponent<React.SVGAttributes<SvgElement>> {}
+declare module '*.svg' {
+  const svg: SvgrComponent
+  export default svg;
+}
