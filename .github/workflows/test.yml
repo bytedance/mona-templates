@@ -26,3 +26,5 @@ jobs:
       - name: npm install and npm test
         run: |
           npm i  --registry=https://registry.npmjs.org
+          npm i -g @bytedance/mona
+          npm run test
