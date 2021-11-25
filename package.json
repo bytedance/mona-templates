@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "mona-monorepo",
+  "name": "mona-template",
   "version": "0.0.1",
-  "description": "mona",
+  "description": "mona-template ejs code",
   "main": "",
   "scripts": {
     "test": "jest",
@@ -10,14 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bytedance/mona"
+    "url": "https://github.com/bytedance/mona-templates"
   },
   "author": "zhangxiaowei.chris@bytedance.com",
   "license": "MIT",
-  "workspaces": [
-    "packages/*",
-    "packages/mona-commands/*"
-  ],
   "packageManager": "yarn@1.22.4",
   "devDependencies": {
     "@types/ejs": "^3.0.7",
