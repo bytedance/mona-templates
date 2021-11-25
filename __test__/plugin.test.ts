@@ -20,9 +20,12 @@ test('template build', async () => {
   try {
     expect(
       await catchError(() =>
-        execSync(`cd ${tmpDir} && npm install --registry=https://registry.npmjs.org && npm run build`, {
-          encoding: 'utf8'
-        })
+        execSync(
+          `cd ${tmpDir} && npm config set package-lock false && npm install --registry=https://registry.npmjs.org && npm run build`,
+          {
+            encoding: 'utf8'
+          }
+        )
       )
     ).toBe(false);
   } finally {
