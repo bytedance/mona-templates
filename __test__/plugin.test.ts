@@ -1,4 +1,3 @@
-import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 import { processTemplates } from './template';
@@ -13,9 +12,17 @@ test('process Js Templates', async () => {
     )
   ).toBe(false);
 }, 100000);
-// test('template build', async () => {
-//   execSync(`cd ${path.join(__dirname, '../plugin')} && npm run build`, { stdio: 'ignore' });
-// }, 100000);
+
+test('template build', async () => {
+  expect(
+    await catchError(() =>
+      execSync(
+        `cd ${path.join(__dirname, '../plugin')} && npm i  --registry=https://registry.npmjs.org && npm run build`,
+        { encoding: 'utf8' }
+      )
+    )
+  ).toBe(false);
+}, 100000);
 
 const catchError = async (fn: any) => {
   let hasError = false;
