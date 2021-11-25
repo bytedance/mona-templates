@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "mona-monorepo",
+  "version": "0.0.1",
+  "description": "mona",
+  "main": "",
+  "scripts": {
+    "test": "jest",
+    "test:c": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bytedance/mona"
+  },
+  "author": "zhangxiaowei.chris@bytedance.com",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "packages/mona-commands/*"
+  ],
+  "packageManager": "yarn@1.22.4",
+  "devDependencies": {
+    "@types/ejs": "^3.0.7",
+    "@types/yargs": "^16.0.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jest": "^27.0.2",
+    "@types/semver": "^7.3.9",
+    "babel-jest": "^27.3.1",
+    "coffee": "^5.4.0",
+    "fs-extra": "^10.0.0",
+    "jest": "^27.3.1",
+    "semver": "^7.3.5",
+    "ejs": "^3.1.6",
+    "ora": "^5.4.1"
+  }
+}
