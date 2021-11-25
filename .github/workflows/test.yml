@@ -26,5 +26,5 @@ jobs:
       - name: npm install and npm test
         run: |
           npm i  --registry=https://registry.npmjs.org
-          rm ./package-lock.json
+          npm install -g @bytedance/mona-cli
           npm run test
