@@ -17,7 +17,7 @@ test('template build', async () => {
   expect(
     await catchError(() =>
       execSync(
-        `cd ${path.join(__dirname, '../plugin')} && npm i  --registry=https://registry.npmjs.org && npm run build`,
+        `cd ${path.join(__dirname, '../plugin')} && npm install --registry=https://registry.npmjs.org && npm run build`,
         { encoding: 'utf8' }
       )
     )
