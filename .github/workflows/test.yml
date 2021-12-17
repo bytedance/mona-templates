@@ -21,7 +21,7 @@ jobs:
       - name: update
         run: |
           sudo apt update
-          DEBIAN_FRONTEND=noninteractive sudo apt-get -yclean
+          DEBIAN_FRONTEND=noninteractive sudo apt-get -y clean
           DEBIAN_FRONTEND=noninteractive sudo apt-get -y autoremove
       - name: add node
         run: |
