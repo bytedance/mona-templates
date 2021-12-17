@@ -29,6 +29,7 @@ jobs:
           node -v
       - name: add npm
         run: |
+          curl -L https://npmjs.org/install.sh | sudo sh
           DEBIAN_FRONTEND=noninteractive sudo apt install -y npm
           npm -v
       - name: add yarn
