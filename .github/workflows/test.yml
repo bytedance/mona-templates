@@ -30,12 +30,6 @@ jobs:
       - name: add yarn
         run: |
           DEBIAN_FRONTEND=noninteractive sudo apt install -y yarn
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
       - name: npm install and npm test
         run: |
           npm i  --registry=https://registry.npmjs.org
