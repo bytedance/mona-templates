@@ -28,9 +28,9 @@ jobs:
           curl -sL https://deb.nodesource.com/setup_12.x | bash -
           DEBIAN_FRONTEND=noninteractive sudo apt install -y nodejs
           node -v
-      - name: add yarn
+      - name: npm
         run: |
-          DEBIAN_FRONTEND=noninteractive sudo apt install -y yarn
+          npm -v
       - name: npm install and npm test
         run: |
           npm i  --registry=https://registry.npmjs.org
