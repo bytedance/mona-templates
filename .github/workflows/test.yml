@@ -21,15 +21,17 @@ jobs:
       - name: update
         run: |
           sudo apt update
-          sudo apt-get remove -y npm
-          sudo apt-get remove -y nodejs
+          sudo apt remove -y npm
+          sudo apt remove -y nodejs
+
       - name: add node
         run: |
           curl -sL https://deb.nodesource.com/setup_12.x | bash -
-          DEBIAN_FRONTEND=noninteractive sudo apt install -y nodejs
+          sudo apt install -g -y nodejs
           node -v
       - name: npm
         run: |
+          sudo apt install -g -y npm
           npm -v
       - name: npm install and npm test
         run: |

@@ -20,7 +20,7 @@ test('template build', async () => {
   try {
     expect(
       await catchError(() =>
-        execSync(`cd ${tmpDir}  && npm install --registry=https://registry.npmjs.org && npm run build`, {
+        execSync(`cd ${tmpDir}  && sudo npm install --registry=https://registry.npmjs.org && sudo npm run build`, {
           encoding: 'utf8'
         })
       )
