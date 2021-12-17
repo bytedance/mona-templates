@@ -28,10 +28,6 @@ jobs:
           curl -sL https://deb.nodesource.com/setup_12.x | bash -
           sudo apt install  -y nodejs
           node -v
-      - name: npm
-        run: |
-          sudo apt install  -y npm
-          npm -v
 
       - name: yarn
         run: |
