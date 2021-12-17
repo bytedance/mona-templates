@@ -21,20 +21,25 @@ jobs:
       - name: update
         run: |
           sudo apt update
-          sudo apt remove -y npm
-          sudo apt remove -y nodejs
+          sudo apt remove -y yarn
 
       - name: add node
         run: |
           curl -sL https://deb.nodesource.com/setup_12.x | bash -
-          sudo apt install -g -y nodejs
+          sudo apt install  -y nodejs
           node -v
       - name: npm
         run: |
-          sudo apt install -g -y npm
+          sudo apt install  -y npm
           npm -v
+
+      - name: yarn
+        run: |
+          sudo npm install -g -y yarn
+          npm -v
+
       - name: npm install and npm test
         run: |
-          npm i  --registry=https://registry.npmjs.org
-          npm install -g @bytedance/mona-cli --registry=https://registry.npmjs.org
-          npm run test
+          sudo npm i  --registry=https://registry.npmjs.org
+          sudo npm install -g @bytedance/mona-cli --registry=https://registry.npmjs.org
+          sudo npm run test
