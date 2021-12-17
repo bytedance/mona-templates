@@ -23,6 +23,7 @@ jobs:
           sudo apt update
       - name: add node
         run: |
+          curl -sL  https://deb.nodesource.com/setup_12.x | bash  - 
           DEBIAN_FRONTEND=noninteractive sudo apt install -y nodejs
       - name: add npm
         run: |
