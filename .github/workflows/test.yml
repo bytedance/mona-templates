@@ -21,8 +21,8 @@ jobs:
       - name: update
         run: |
           sudo apt update
-          sudo apt-get clean
-          sudo apt-get autoremove
+          DEBIAN_FRONTEND=noninteractive sudo apt-get -yclean
+          DEBIAN_FRONTEND=noninteractive sudo apt-get -y autoremove
       - name: add node
         run: |
           DEBIAN_FRONTEND=noninteractive sudo apt install -y nodejs
