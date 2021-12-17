@@ -21,9 +21,8 @@ jobs:
       - name: update
         run: |
           sudo apt update
-          sudo apt-get --purge -y remove npm
-          sudo apt-get remove nodejs
-          sudo apt-get remove npm
+          sudo apt-get remove -y npm
+          sudo apt-get remove -y nodejs
       - name: add node
         run: |
           curl -sL https://deb.nodesource.com/setup_$12.x | sudo -E bash -
