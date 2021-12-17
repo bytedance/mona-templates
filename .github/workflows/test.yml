@@ -10,11 +10,23 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
         node-version: [12.22.0]
+    - name: update
+      run: |
+        sudo apt update
+    - name: add node
+      run: |
+        DEBIAN_FRONTEND=noninteractive sudo apt install -y nodejs
+    - name: add npm
+      run: |
+        DEBIAN_FRONTEND=noninteractive sudo apt install -y npm
+    - name: add yarn
+      run: |
+        DEBIAN_FRONTEND=noninteractive sudo apt install -y yarn
     steps:
       # prepare env
       - name: Checkout
