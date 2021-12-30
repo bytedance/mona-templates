@@ -15,7 +15,7 @@
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
     "@bytedance/mona": "^0.2.0-alpha.5",
-    "@bytedance/mona-runtime": "^^0.2.0-alpha.5"
+    "@bytedance/mona-runtime": "^0.2.0-alpha.5"
   },<% if(data.typescript) { %>
   "devDependencies": {
       "typescript": "^4.0.2",
