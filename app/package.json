@@ -5,8 +5,10 @@
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && mona build",
-    "start": "mona start",
+    "build": "rm -rf dist && mona build -t web",
+    "start": "mona start -t web",
+    "build:mini": "rm -rf dist && mona build -t mini",
+    "start:mini": "mona start -t mini",
     "compress": "mona publish"
   },
   "dependencies": {

@@ -5,8 +5,8 @@
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && mona build",
-    "start": "mona start",
+    "build": "rm -rf dist && mona build -t plugin",
+    "start": "mona start -t plugin",
     "compress": "mona publish"
   },
   "dependencies": {
