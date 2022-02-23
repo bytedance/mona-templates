@@ -1,0 +1,4 @@
+<view class="wrapper">
+  <text class="point">·</text>
+  <slot />
+</view>
