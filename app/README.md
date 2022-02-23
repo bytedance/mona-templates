@@ -1,2 +1,2 @@
-# mona-plugin
-This is a mona plugin project
+# mona-app
+This is a mona app project
