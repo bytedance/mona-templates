@@ -20,8 +20,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "component/*": ["./src/components/*"],
-      "native:\/\/*":["./node_modules/*",],
-      "native:\/\/components/":["./src/components"],
+      "native:\/\/*":["./src/typings/mini.d.ts",],
     }
   },
   "include": ["src"],
