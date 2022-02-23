@@ -23,7 +23,7 @@ const reducer = (state, action) => {
       return state;
   }
 };
-const App: React.FC = ({ children }) => {
+const App<%- data.typescript ? ': React.FC' : '' %> = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initData);
   return <TodoContext.Provider value={{ state, dispatch }}>{children}</TodoContext.Provider>;
 };
