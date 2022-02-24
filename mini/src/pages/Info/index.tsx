@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, setNavigationBarTitle } from '@bytedance/mona-runtime';
+import { View, Mona } from '@bytedance/mona-runtime';
 
 class Info extends React.Component {
   state = {};
   onLoad() {
-    setNavigationBarTitle({
+    Mona.setNavigationBarTitle({
       title: 'new Info Title',
     });
   }

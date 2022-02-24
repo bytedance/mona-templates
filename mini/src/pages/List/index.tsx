@@ -1,6 +1,6 @@
 import { TodoContext } from '@/app';
 import Wrapper from '@/components/Wrapper';
-import { Input, View, Button, navigateBack } from '@bytedance/mona-runtime';
+import { Input, View, Button, Mona } from '@bytedance/mona-runtime';
 import React from 'react';
 import styles from './index.module.<%= data.cssExt %>';
 
@@ -25,7 +25,7 @@ const List = () => {
         <Button
           onTap={() => {
             dispatch({ type: 'add', payload: { data: inputRef.current } });
-            navigateBack({ delta: 1 });
+            Mona.navigateBack({ delta: 1 });
           }}
         >
           添加

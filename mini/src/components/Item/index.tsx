@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from '@bytedance/mona-runtime';
 
-const Home<%- data.typescript ? ': React.FC<PageProps>' : '' %> = ({ text }) => {
+const Home<%- data.typescript ? ': React.FC' : '' %> = ({ text }) => {
   return (
     <View>
       <Text>{text}</Text>

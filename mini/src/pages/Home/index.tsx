@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, View, Image, Navigator, usePageEvent, setNavigationBarTitle } from '@bytedance/mona-runtime';
+import { Button, View, Image, Navigator, usePageEvent, Mona } from '@bytedance/mona-runtime';
 import Logo from '@/common/imgs/logo.svg';
 
 import Wrapper from '@/components/Wrapper';
@@ -14,7 +14,7 @@ const Home = () => {
   const { state: todoList } = React.useContext(TodoContext);
 
   usePageEvent('onLoad', () => {
-    setNavigationBarTitle({
+    Mona.setNavigationBarTitle({
       title: 'new Home Title',
     });
   });

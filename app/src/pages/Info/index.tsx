@@ -1,5 +1,5 @@
 import Wrapper from '@/components/Wrapper';
-import { View, Text, navigateBack<%= data.typescript ? ', PageProps' : '' %> } from '@bytedance/mona-runtime';
+import { View, Text, Mona<%= data.typescript ? ', PageProps' : '' %> } from '@bytedance/mona-runtime';
 import React from 'react';
 
 const Info<%- data.typescript ? ': React.FC<PageProps>' : '' %> = ({ search, searchParams }) => {
@@ -8,7 +8,7 @@ const Info<%- data.typescript ? ': React.FC<PageProps>' : '' %> = ({ search, sea
     <Wrapper>
       <View>
         <View>I am route page <Text>/pages/Info/index</Text></View>
-        <View><Text onTap={() => { navigateBack(); }}>back to <Text>/pages/Home/index</Text></Text></View>
+        <View><Text onTap={() => { Mona.navigateBack(); }}>back to <Text>/pages/Home/index</Text></Text></View>
       </View>
     </Wrapper>
   )
