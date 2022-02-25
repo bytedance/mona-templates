@@ -1,0 +1,22 @@
+{
+    "app": [],
+    "systems": ["ios", "android"],
+    "thumbnail": "",
+    "doc": "",
+    "limit": {
+        "droppable": false,
+        "maxChildrenCount": 0,
+        "childrenLimits": [],
+        "maxCount": -1,
+        "deletable": true,
+        "draggable": true
+    },
+    "schema": {
+        "type": "customRender",
+        "value": "dist/setting.umd.js"
+    },
+    "framework": "react",
+    "type": "component",
+    "source": "<%= source %>",
+    "dist": "dist/index.umd.js"
+}

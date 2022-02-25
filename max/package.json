@@ -1,0 +1,33 @@
+{
+  "name": "<%= data.projectName %>",
+  "version": "1.0.0",
+  "description": "Max-isv component",
+  "module": "dist/index.esm.js",
+  "main": "dist/index.umd.js",
+  "source": "src/index.tsx",
+  "unpkg": true,
+  "unpkgFiles": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "mona-service isv-build",
+    "start": "mona-service isv-start",
+    "publish": "mona-service publish --appid <%= data.appId %>"
+  },
+  "author": "max-isv-team",
+  "license": "ISC",
+  "devDependencies": {
+    "@max-isv-tool/max-isv-cli": "1.1.14"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "sideEffects": [
+    "*.css",
+    "*.less",
+    "*.scss",
+    "*.sass"
+  ],
+  "dependencies": {}
+}
