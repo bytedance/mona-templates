@@ -12,7 +12,7 @@
   "scripts": {
     "build": "mona-service max-build",
     "start": "mona-service max-start",
-    "publish": "mona-service publish --appid <%= data.appId %>"
+    "upload": "mona-service publish --appid <%= data.appId %>"
   },
   "author": "max-isv-team",
   "sideEffects": [
