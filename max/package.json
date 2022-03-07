@@ -4,7 +4,7 @@
   "description": "Max-isv component",
   "module": "dist/index.esm.js",
   "main": "dist/index.umd.js",
-  "source": "src/index.tsx",
+  "source": "src/index",
   "unpkg": true,
   "unpkgFiles": [
     "dist"
@@ -25,5 +25,11 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   }
 }
