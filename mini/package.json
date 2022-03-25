@@ -5,9 +5,9 @@
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && cross-env NODE_ENV=production  mona-service build",
-    "start": "rm -rf dist && cross-env NODE_ENV=development mona-service start",
-    "compress": "mona-service compress"
+    "build": "rm -rf dist && cross-env NODE_ENV=production  mona-service build -t mini",
+    "start": "rm -rf dist && cross-env NODE_ENV=development mona-service start -t mini",
+    "compress": "yarn build && mona-service compress"
   },
   "dependencies": {
     "@bytedance/mona": "latest",

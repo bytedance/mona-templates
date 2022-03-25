@@ -5,9 +5,9 @@
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && cross-env NODE_ENV=production  mona-service build",
-    "start": "rm -rf dist && cross-env NODE_ENV=development mona-service start",
-    "compress": "mona-service compress"
+    "build": "rm -rf dist && cross-env NODE_ENV=production  mona-service build -t plugin",
+    "start": "rm -rf dist && cross-env NODE_ENV=development mona-service start -t plugin",
+    "compress": "yarn build && mona-service compress"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",

@@ -9,7 +9,7 @@
     "start": "rm -rf dist && cross-env NODE_ENV=development mona-service start",
     "start:mini": "yarn start -t mini",
     "build:mini": "yarn build -t mini",
-    "compress": "mona-service compress"
+    "compress": "yarn build && mona-service compress"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
