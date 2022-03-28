@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 export default () => {
-    return (
-        <div>
-            <div>Hello Max Isv Component!!!</div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div>Hello Max Isv Component!!!</div>
+    </div>
+  );
+};
