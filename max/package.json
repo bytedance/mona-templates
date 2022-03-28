@@ -21,7 +21,7 @@
     "*.less"
   ],
   "devDependencies": {
-    "@bytedance/mona-service": "^0.2.0-alpha.13"
+    "@bytedance/mona-service": "latest"
   },
   "dependencies": {
     "react": "^17.0.2",
