@@ -12,6 +12,7 @@
   "scripts": {
     "build": "mona-service max-build",
     "start": "mona-service max-start",
+    "compress": "mona-service compress --use-root",
     "upload": "mona-service publish --appid <%= data.appId %>"
   },
   "author": "max-isv-team",
