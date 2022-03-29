@@ -18,7 +18,8 @@
     "react-router-dom": "^5.2.0",
     "react-json-view": "^1.21.3",
     "@bytedance/mona": "latest",
-    "@bytedance/mona-runtime": "latest"
+    "@bytedance/mona-runtime": "latest",
+    "@bytedance/mona-service": "latest"
   },
   "devDependencies": {
   <%_ if(data.typescript) { _%>
