@@ -10,10 +10,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "mona-service max-build",
-    "start": "mona-service max-start",
+    "build": "cross-env NODE_ENV=production  mona-service build -t max",
+    "start": "cross-env NODE_ENV=development mona-service start -t max",
     "compress": "mona-service compress --use-root",
-    "upload": "mona-service publish --appid <%= data.appId %>"
+    "upload": "mona-service publish"
   },
   "author": "max-isv-team",
   "sideEffects": [
