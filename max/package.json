@@ -10,8 +10,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "cross-env NODE_ENV=production  mona-service build -t max",
-    "start": "cross-env NODE_ENV=development mona-service start -t max",
+    "build": "mona-service build -t max",
+    "start": "mona-service start -t max",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish"
   },
