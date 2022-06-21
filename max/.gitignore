@@ -20,3 +20,5 @@ dist/
 # Docs outputs
 site/
 docs/h5/
+
+.mona
