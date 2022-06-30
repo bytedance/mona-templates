@@ -1,0 +1,14 @@
+{
+  "name": "@shop-isv/<%= data.projectName %>",
+  "version": "1.0.0",
+  "description": "Max-isv template",
+  "scripts": {
+    "start": "mona-service max-template-start",
+    "compress": "mona-service compress --use-root",
+    "upload": "mona-service publish --appid <%= data.appId %>"
+  },
+  "author": "max-isv-team",
+  "devDependencies": {
+    "@bytedance/mona-service": "latest"
+  }
+}
