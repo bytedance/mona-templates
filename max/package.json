@@ -13,7 +13,8 @@
     "build": "mona-service build -t max",
     "start": "mona-service start -t max",
     "compress": "mona-service compress --use-root",
-    "upload": "mona-service publish"
+    "upload": "mona-service publish",
+    "preview": "mona-service preview -t max"
   },
   "author": "max-isv-team",
   "sideEffects": [

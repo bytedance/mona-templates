@@ -5,7 +5,8 @@
   "scripts": {
     "start": "mona-service max-template-start",
     "compress": "mona-service compress --use-root",
-    "upload": "mona-service publish --appid <%= data.appId %>"
+    "upload": "mona-service publish",
+    "preview": "mona-service preview -t max-template"
   },
   "author": "max-isv-team",
   "devDependencies": {
