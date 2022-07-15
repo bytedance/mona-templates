@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "lib": ["es7", "dom"],
+    "jsx": "react",
+    "strict": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "files": ["mona.config.ts"]
+}
