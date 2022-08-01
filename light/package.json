@@ -8,7 +8,7 @@
     "build": "rm -rf dist && mona-service build -t light",
     "start": "rm -rf dist && mona-service start -t light",
     "compress": "yarn build && mona-service compress",
-    "upload": "mona-service publish -t light",
+    "upload": "mona-service publish",
     "preview": "mona-service preview -t light"
   },
   "dependencies": {
