@@ -5,11 +5,11 @@
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && cross-env NODE_ENV=production  mona-service build",
-    "start": "rm -rf dist && cross-env NODE_ENV=development mona-service start",
-    "start:mini": "yarn start -t mini",
-    "build:mini": "yarn build -t mini",
-    "compress": "yarn build && mona-service compress"
+    "build": "mona-service build",
+    "start": "mona-service start",
+    "start:mini": "npm run start -t mini",
+    "build:mini": "npm run build -t mini",
+    "compress": "npm run build && mona-service compress"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
@@ -23,13 +23,11 @@
   },
   "devDependencies": {
   <%_ if(data.typescript) { _%>
-    "cross-env": "^7.0.3",
-    "typescript": "^4.0.2",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.0"
-  <%} else {_%>
-    "cross-env": "^7.0.3"
-  <%}_%>
+      "typescript": "^4.0.2",
+      "@types/react": "^17.0.2",
+      "@types/react-dom": "^17.0.0"
+  <%
+    }_%>
   },
   "license": "UNLICENSED"
 }

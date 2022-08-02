@@ -5,8 +5,8 @@
   "author": "unknow",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && mona-service build -t light",
-    "start": "rm -rf dist && mona-service start -t light",
+    "build": "mona-service build -t light",
+    "start": "mona-service start -t light",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish",
     "preview": "mona-service preview -t light"
