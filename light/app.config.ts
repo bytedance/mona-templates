@@ -6,7 +6,7 @@ export default createAppConfig({
     'pages/Info/index',
     'pages/List/index'
   ],
-  lightApp: {
+  light: {
     mode: 'sidebar-semi-420'
   }
 })
