@@ -9,7 +9,7 @@
     "start": "mona-service start",
     "start:mini": "mona-service start -t mini",
     "build:mini": "mona-service build -t mini",
-    "compress": "mona-service build && mona-service compress"
+    "compress": "mona-service compress"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
