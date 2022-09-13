@@ -7,7 +7,7 @@
   "scripts": {
     "build": "mona-service build -t plugin",
     "start": "mona-service start -t plugin",
-    "compress": "npm run build && mona-service compress -r"
+    "compress": "mona-service compress -r"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
