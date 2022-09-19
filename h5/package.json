@@ -7,9 +7,9 @@
   "scripts": {
     "build": "mona-service build",
     "start": "mona-service start",
-    "start:mini": "mona-service start -t mini",
-    "build:mini": "mona-service build -t mini",
-    "compress": "mona-service compress"
+    "start:mini": "mona-service start -t h5",
+    "build:mini": "mona-service build -t h5",
+    "compress": "mona-service compress -r "
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
