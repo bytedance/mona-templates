@@ -2,15 +2,15 @@ import { Color, Script, Vector3<%= data.typescript ? ', BlinnPhongMaterial, Mesh
 
 
 export default class CubeScript extends Script<%= data.typescript ? '<Mesh<any, BlinnPhongMaterial>>' : '' %> {
-  private _tmpVec3 = new Vector3();
-  private _lastPosition = new Vector3();
-  private _zValue: number = 0;
-  private _color = new Color();
+  <%= data.typescript ? 'private' : '' %> _tmpVec3 = new Vector3();
+  <%= data.typescript ? 'private' : '' %> _lastPosition = new Vector3();
+  <%= data.typescript ? 'private' : '' %> _zValue<%= data.typescript ? ': number' : '' %> = 0;
+  <%= data.typescript ? 'private' : '' %> _color = new Color();
 
   static width = 0;
   static height = 0;
 
-  onAwake(): void {
+  onAwake()<%= data.typescript ? ': void' : '' %> {
     this.instance.matrixAutoUpdate = false;
   }
   onPointerEnter(ev<%= data.typescript ? ': TinoeEvent<Mesh>' : '' %>)<%= data.typescript ?': void' : '' %> {

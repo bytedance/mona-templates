@@ -54,7 +54,7 @@ export default () => {
 
     // 添加脚本
     scene.scriptManager.addScript(GameScript);
-    scene.scriptManager.addScript<any>(CubeScript, cube);
+    scene.scriptManager.addScript<%= data.typescript ? '<any>' : '' %>(CubeScript, cube);
     CubeScript.width = stage.canvas.clientWidth;
     CubeScript.height = stage.canvas.clientHeight;
 

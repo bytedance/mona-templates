@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { Canvas, View, useMiniEffect, usePageEvent } from '@bytedance/mona-runtime';
-import { Stage, TinoeStageProps } from 'tinoe';
+import { Stage<%= data.typescript ? ', TinoeStageProps' : '' } from 'tinoe';
 import styles from './index.module.<%= data.cssExt %>';
 
 <% if(data.typescript) { %>
@@ -16,14 +16,14 @@ const TinoeContainer = ({ children, tinoeProps = {} }<%= data.typescript ?': Tin
   const [stage, setStage] = useState<%= data.typescript ? '<Stage>' : '' %>();
 
   const dispatch = (e<%= data.typescript ? ': any' : '' %>) => {
-    stage?.canvas.dispatch(e);
+    stage && stage.canvas.dispatch(e);
   };
   const initStage = () => {
     // @ts-ignore xxx
     tt.createSelectorQuery()
       .select('#canvas_type_webgl')
       .node()
-      .exec((res: any) => {
+      .exec((res<%= data.typescript ? ': any' : '' %>) => {
         const canvas = res[0].node;
         const tinoeStage = new Stage({ canvas, ...tinoeProps });
         setStage(tinoeStage);
@@ -35,7 +35,7 @@ const TinoeContainer = ({ children, tinoeProps = {} }<%= data.typescript ?': Tin
   }, []);
 
   usePageEvent('onUnload', () => {
-    stage?.destroy();
+    stage && stage.destroy();
   });
 
   return (
