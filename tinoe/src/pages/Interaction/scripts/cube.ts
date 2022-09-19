@@ -1,4 +1,4 @@
-import { Color, Script, Vector3<%= data.typescript ? ', BlinnPhongMaterial, Mesh, TinoeEvent' : %> } from "tinoe";
+import { Color, Script, Vector3<%= data.typescript ? ', BlinnPhongMaterial, Mesh, TinoeEvent' : ''%> } from "tinoe";
 
 
 export default class CubeScript extends Script<%= data.typescript ? '<Mesh<any, BlinnPhongMaterial>>' : '' %> {
