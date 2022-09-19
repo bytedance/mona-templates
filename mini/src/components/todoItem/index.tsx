@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from '@bytedance/mona-runtime';
-import styles from './index.module.less';
+import styles from './index.module.<%= data.cssExt %>';
 import Item from 'native://components/miniComponent/index';
 
 const TodoItem<%- data.typescript ? ': React.FC' : '' %> = ({ children }) => {
