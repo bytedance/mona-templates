@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 import { Canvas, View, useMiniEffect, usePageEvent } from '@bytedance/mona-runtime';
-import { Stage<%= data.typescript ? ', TinoeStageProps' : '' %> } from 'tinoe';
-import styles from './index.module.<%= data.cssExt %>';
+import { Stage<%- data.typescript ? ', TinoeStageProps' : '' %> } from 'tinoe';
+import styles from './index.module.<%- data.cssExt %>';
 
 <% if(data.typescript) { %>
 export interface TinoeContainerProps {
@@ -10,12 +10,12 @@ export interface TinoeContainerProps {
 }
 <% } %>
 
-export const TinoeContext = createContext<%= data.typescript ? '<{ stage?: Stage }>' : '' %>({});
+export const TinoeContext = createContext<%- data.typescript ? '<{ stage?: Stage }>' : '' %>({});
 
-const TinoeContainer = ({ children, tinoeProps = {} }<%= data.typescript ?': TinoeContainerProps' : '' %>) => {
-  const [stage, setStage] = useState<%= data.typescript ? '<Stage>' : '' %>();
+const TinoeContainer = ({ children, tinoeProps = {} }<%- data.typescript ?': TinoeContainerProps' : '' %>) => {
+  const [stage, setStage] = useState<%- data.typescript ? '<Stage>' : '' %>();
 
-  const dispatch = (e<%= data.typescript ? ': any' : '' %>) => {
+  const dispatch = (e<%- data.typescript ? ': any' : '' %>) => {
     stage && stage.canvas.dispatch(e);
   };
   const initStage = () => {
@@ -23,7 +23,7 @@ const TinoeContainer = ({ children, tinoeProps = {} }<%= data.typescript ?': Tin
     tt.createSelectorQuery()
       .select('#canvas_type_webgl')
       .node()
-      .exec((res<%= data.typescript ? ': any' : '' %>) => {
+      .exec((res<%- data.typescript ? ': any' : '' %>) => {
         const canvas = res[0].node;
         const tinoeStage = new Stage({ canvas, ...tinoeProps });
         setStage(tinoeStage);
