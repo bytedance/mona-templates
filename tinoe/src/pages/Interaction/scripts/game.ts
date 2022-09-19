@@ -1,4 +1,4 @@
-import { Script<%= data.typescript ? ', TinoeEvent' : '' } from "tinoe";
+import { Script<%= data.typescript ? ', TinoeEvent' : '' %>} from "tinoe";
 
 export default class GameScript extends Script {
   onSwipeDown(ev<%= data.typescript ?': TinoeEvent<any>' : '' %>)<%= data.typescript ? ': void' %> {
