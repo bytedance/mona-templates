@@ -1,0 +1,33 @@
+{
+  "name": "<%= data.projectName %>",
+  "version": "1.0.0",
+  "description": "Project created by mona-cli",
+  "author": "unknow",
+  "private": true,
+  "scripts": {
+    "build": "mona-service build",
+    "start": "mona-service start",
+    "start:mini": "mona-service start -t mini",
+    "build:mini": "mona-service build -t mini",
+    "compress": "mona-service compress"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-json-view": "^1.21.3",
+    "@bytedance/mona": "latest",
+    "@bytedance/mona-runtime": "latest",
+    "@bytedance/mona-service": "latest"
+  },
+  "devDependencies": {
+  <%_ if(data.typescript) { _%>
+      "typescript": "^4.0.2",
+      "@types/react": "^17.0.2",
+      "@types/react-dom": "^17.0.0"
+  <%
+    }_%>
+  },
+  "license": "UNLICENSED"
+}
