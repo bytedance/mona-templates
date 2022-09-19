@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { Canvas, View, useMiniEffect, usePageEvent } from '@bytedance/mona-runtime';
-import { Stage<%= data.typescript ? ', TinoeStageProps' : '' } from 'tinoe';
+import { Stage<%= data.typescript ? ', TinoeStageProps' : '' %> } from 'tinoe';
 import styles from './index.module.<%= data.cssExt %>';
 
 <% if(data.typescript) { %>
