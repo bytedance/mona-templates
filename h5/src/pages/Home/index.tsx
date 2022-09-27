@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigator, View, Text, Image } from '@bytedance/mona-runtime'
+import { Navigator } from '@bytedance/mona-runtime'
 import logo from '@/common/imgs/logo.svg';
 import Wrapper from '@/components/Wrapper';
 import styles from './index.module.<%= data.cssExt %>';
@@ -7,13 +7,13 @@ import styles from './index.module.<%= data.cssExt %>';
 const Home = () => {
   return (
     <Wrapper>
-      <View className={styles.header}>
-        <Image className={styles.logo} src={logo} />
-        <View>Edit <Text>src/pages/Home/index<%- data.typescript ? '.tsx' : '.jsx' %></Text> and save to reload</View>
-        <View className={styles.list}>
-          <View className={styles.link}><Navigator url="/pages/Info/index">Click me to navigate <Text>/pages/Info/index</Text></Navigator></View>
-        </View>
-      </View>
+      <div className={styles.header}>
+        <img className={styles.logo} src={logo} />
+        <div>Edit <span>src/pages/Home/index<%- data.typescript ? '.tsx' : '.jsx' %></span> and save to reload</div>
+        <div className={styles.list}>
+          <div className={styles.link}><Navigator url="/pages/Info/index">Click me to navigate <span>/pages/Info/index</span></Navigator></div>
+        </div>
+      </div>
     </Wrapper>
   )
 }

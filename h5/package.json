@@ -7,23 +7,22 @@
   "scripts": {
     "start": "mona-service start -t h5",
     "build": "mona-service build -t h5",
-    "compress": "mona-service compress -r "
+    "compress": "mona-service compress -r ",
+    "preview": "mona-service preview -t h5 "
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
-    "react-json-view": "^1.21.3",
-    "@bytedance/mona": "alpha",
-    "@bytedance/mona-runtime": "alpha",
-    "@bytedance/mona-service": "alpha"
+    "@bytedance/mona": "latest",
+    "@bytedance/mona-runtime": "latest",
+    "@bytedance/mona-service": "latest"
   },
   "devDependencies": {
   <%_ if(data.typescript) { _%>
-      "typescript": "^4.0.2",
-      "@types/react": "^17.0.2",
-      "@types/react-dom": "^17.0.0"
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.0"
   <%
     }_%>
   },
