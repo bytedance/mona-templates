@@ -8,7 +8,7 @@ const Info<%- data.typescript ? ': React.FC<PageProps>' : '' %> = ({ search, sea
     <Wrapper>
       <div>
         <div>I am route page <span>/pages/Info/index</span></div>
-        <div><div onTap={() => { Mona.navigateBack(); }}>back to <span>/pages/Home/index</span></div></div>
+        <div><div onClick={() => { Mona.navigateBack(); }}>back to <span>/pages/Home/index</span></div></div>
       </div>
     </Wrapper>
   )
