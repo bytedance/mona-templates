@@ -1,3 +1,6 @@
+// mona.config.ts
 export default {
-  appId: "<%= data.appId %>"
-}
+  projectName: "<%= data.projectName %>",
+  input: "./src/components/component1/index",
+  appId: "<%= data.appId %>",
+};

@@ -1,7 +1,7 @@
 {
   "name": "@shop-isv/<%= data.projectName %>",
-  "version": "0.0.1",
-  "description": "max component",
+  "version": "1.0.0",
+  "description": "Max-isv component",
   "module": "dist/index.esm.js",
   "main": "dist/index.umd.js",
   "source": "src/index",
@@ -10,11 +10,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "mona-service build -t max",
-    "start": "mona-service start -t max",
+    "build": "mona-service build -t max --old",
+    "start": "mona-service start -t max --old",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish",
-    "preview": "mona-service preview -t max"
+    "preview": "mona-service preview -t max --old"
   },
   "author": "max-isv-team",
   "sideEffects": [
@@ -22,11 +22,16 @@
     "*.less"
   ],
   "devDependencies": {
-    "@bytedance/mona-service": "latest",
-    "@bytedance/mona-speedy": "latest"
+    "@bytedance/mona-service": "latest"
   },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   }
 }

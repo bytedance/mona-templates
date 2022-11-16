@@ -2,9 +2,9 @@ import { createProjectConfig } from '@bytedance/mona'
 import path from 'path'
 
 export default createProjectConfig({
-  projectName: 'mona-tinoe-template',
+  projectName: '<%= data.projectName %>',
   input: './src/app',
-  appId: 'testAppId',
+  appId: '<%= data.appId %>',
   abilities: {
     alias: {
       components: path.join(__dirname, './src/components'),
