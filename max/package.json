@@ -22,7 +22,8 @@
     "*.less"
   ],
   "devDependencies": {
-    "@bytedance/mona-service": "alpha"
+    "@bytedance/mona-service": "alpha",
+    "@bytedance/mona-runtime": "alpha"
   },
   "dependencies": {
     "react": "^17.0.2",
