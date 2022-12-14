@@ -8,7 +8,8 @@
     "start": "mona-service start -t h5",
     "build": "mona-service build -t h5",
     "compress": "mona-service compress -r ",
-    "preview": "mona-service preview -t h5 "
+    "preview": "mona-service preview",
+    "upload": "mona-service publish"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
@@ -22,7 +23,7 @@
   "devDependencies": {
   <%_ if(data.typescript) { _%>
     "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.0"
+      "@types/react-dom": "^17.0.0"
   <%
     }_%>
   },

@@ -9,7 +9,7 @@
     "start": "mona-service start -t light",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish",
-    "preview": "mona-service preview -t light"
+    "preview": "mona-service preview"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",

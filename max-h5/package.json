@@ -14,7 +14,7 @@
     "start": "mona-service start -t max --old",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish",
-    "preview": "mona-service preview -t max --old"
+    "preview": "mona-service preview --old"
   },
   "author": "max-isv-team",
   "sideEffects": [

@@ -6,7 +6,7 @@
     "start": "mona-service start -t max-template",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish",
-    "preview": "mona-service preview -t max-template"
+    "preview": "mona-service preview"
   },
   "author": "max-isv-team",
   "devDependencies": {
