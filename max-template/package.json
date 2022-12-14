@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Max-isv template",
   "scripts": {
-    "start": "mona-service max-template-start",
+    "start": "mona-service start -t max-template",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish",
     "preview": "mona-service preview -t max-template"
