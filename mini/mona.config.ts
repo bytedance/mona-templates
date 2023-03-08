@@ -4,7 +4,6 @@ import path from 'path';
 export default createProjectConfig({
   projectName: '<%= data.projectName %>',
   input: './src/app',
-  output: 'dist',
   appId:'testAppId',
   abilities: {
     alias: {
