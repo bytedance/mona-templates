@@ -10,7 +10,7 @@ export default createProjectConfig({
     alias: {
       "components": path.join(__dirname, './src/components'),
     },
-    sourceMap: process.env.NODE_ENV === 'production' ? false : 'cheap-source-map',
+    sourceMap: false,
     define: {
       REQ_URL: JSON.stringify('https://xxx/xxx'),
     },
