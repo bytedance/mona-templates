@@ -10,7 +10,6 @@
     "compress": "npm run build && mona-service compress"
   },
   "dependencies": {
-    "@bytedance/mona": "latest",
     "@bytedance/mona-runtime": "latest",
     "@bytedance/mona-service": "latest",
     "react": "^17.0.2",
