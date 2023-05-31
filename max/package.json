@@ -24,7 +24,7 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "@bytedance/mona-runtime": "alpha",
-    "@bytedance/mona-service": "alpha"
+    "@bytedance/mona-runtime": "latest",
+    "@bytedance/mona-service": "latest"
   }
 }
