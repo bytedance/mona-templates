@@ -8,7 +8,7 @@
     "start": "mona-service start -t mobile",
     "build": "mona-service build -t mobile",
     "compress": "mona-service compress -r ",
-    "preview": "mona-service preview",
+    "preview": "mona-service preview -t mobile",
     "upload": "mona-service publish"
   },
   "dependencies": {
