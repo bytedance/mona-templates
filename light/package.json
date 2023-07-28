@@ -7,6 +7,7 @@
   "scripts": {
     "build": "mona-service build -t light",
     "start": "mona-service start -t light",
+    "start:c": "mona-service start -t --coverage",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish",
     "preview": "mona-service preview"
@@ -21,6 +22,8 @@
     "@bytedance/mona-ui": "latest"
   },
   "devDependencies": {
+    "@bytedance/coverage-uploader": "latest",
+    "@bytedance/babel-coverage-plugin": "latest",
   <%_ if(data.typescript) { _%>
     "typescript": "^4.0.2",
       "@types/react": "^17.0.2",
