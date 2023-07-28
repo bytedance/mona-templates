@@ -9,7 +9,7 @@
     "build": "mona-service build -t mobile",
     "compress": "mona-service compress -r ",
     "preview": "mona-service preview -t mobile",
-    "upload": "mona-service publish"
+    "upload": "mona-service publish -t mobile"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
