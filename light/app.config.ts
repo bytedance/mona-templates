@@ -5,8 +5,5 @@ export default createAppConfig({
     'pages/Home/index',
     'pages/Info/index',
     'pages/List/index'
-  ],
-  light: {
-    mode: 'sidebar-semi-420'
-  }
+  ]
 })
