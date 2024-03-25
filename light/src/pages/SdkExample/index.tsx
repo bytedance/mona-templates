@@ -1,3 +1,4 @@
+// 飞鸽插件适用，微应用忽略
 import { tt } from '@bytedance/mona-runtime';
 import React, { useState, useEffect } from 'react';
 
