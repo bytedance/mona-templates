@@ -19,7 +19,8 @@
     "react-router-dom": "^5.2.0",
     "@bytedance/mona-runtime": "latest",
     "@bytedance/mona-service": "latest",
-    "@bytedance/mona-ui": "latest"
+    "@bytedance/mona-ui": "latest",
+    "react-json-view": "^1.21.3"
   },
   "devDependencies": {
     "@bytedance/coverage-uploader": "latest",
