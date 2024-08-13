@@ -1,5 +1,5 @@
 // 飞鸽插件适用，微应用忽略
-import { tt } from '@bytedance/mona-runtime';
+import { pigeon } from '@bytedance/mona-runtime';
 import React, { useState, useEffect } from 'react';
 
 import ReactJson from 'react-json-view';
@@ -9,14 +9,14 @@ const SdkExample = () => {
   const [data, setData] = useState({ copy: {}, show: {}, customerInfo: {}, init: {} });
   useEffect(() => {
     // 飞鸽插件前台展示，以下示例子均为飞鸽插件专属
-    tt.onShow(data => {
+    pigeon.onShow(data => {
       setData(d => ({
         ...d,
         show: JSON.parse(JSON.stringify(data))
       }));
     });
 
-    tt.onCurrentCustomerChange(data => {
+    pigeon.onCurrentCustomerChange(data => {
       console.log({ data });
       setData(d => ({
         ...d,
@@ -24,7 +24,7 @@ const SdkExample = () => {
       }));
     });
 
-    tt.getInitInfo({
+    pigeon.getInitInfo({
       success: data => {
         setData(d => ({
           ...d,
@@ -45,7 +45,7 @@ const SdkExample = () => {
   }, []);
 
   const handleCopy = () => {
-    tt.addToInputBoxSafely({
+    pigeon.addToInputBoxSafely({
       data: '这是一段文字',
       success: data => {
         setData(d => ({
