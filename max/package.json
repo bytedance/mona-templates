@@ -12,6 +12,7 @@
   "scripts": {
     "build": "mona-service build -t max",
     "start": "mona-service start -t max",
+    "start:category": "mona-service start -t max --debug-page=category",
     "compress": "mona-service compress --use-root",
     "upload": "mona-service publish",
     "preview": "mona-service preview"
