@@ -1,0 +1,30 @@
+{
+  "name": "@shop-isv/<%= data.projectName %>",
+  "version": "0.0.1",
+  "description": "max component",
+  "module": "dist/index.esm.js",
+  "main": "dist/index.umd.js",
+  "source": "src/index",
+  "unpkg": true,
+  "unpkgFiles": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "mona-service build -t max",
+    "start": "mona-service start -t max --debug-page=category --nav-component",
+    "compress": "mona-service compress --use-root",
+    "upload": "mona-service publish",
+    "preview": "mona-service preview --preview-page=category"
+  },
+  "author": "max-isv-team",
+  "sideEffects": [
+    "*.css",
+    "*.less"
+  ],
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@bytedance/mona-runtime": "latest",
+    "@bytedance/mona-service": "latest"
+  }
+}

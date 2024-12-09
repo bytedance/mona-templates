@@ -1,0 +1,3 @@
+<view>
+    <text>hello {{name}} component</text>
+</view>
